@@ -106,16 +106,16 @@ fn part2(stacks: &mut Stacks, instructions: &Instructions) {
 fn main() {
     let mut instructions = Instructions::new();
 
-    read_file("puzzle.txt", parse_items, &mut instructions);
+    read_file("test01.txt", parse_items, &mut instructions);
 
-    let mut stacks_p1 = get_stacks(Input::Puzzle);
+    let mut stacks_p1 = get_stacks(Input::Test);
     println!("PART 1");
     pretty_print(&stacks_p1);
     part1(&mut stacks_p1, &instructions);
     pretty_print(&stacks_p1);
    
 
-    let mut stacks_p2 = get_stacks(Input::Puzzle);
+    let mut stacks_p2 = get_stacks(Input::Test);
     println!("\n\nPART 2");
     pretty_print(&stacks_p2);
     part2(&mut stacks_p2, &instructions);
