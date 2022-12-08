@@ -9,8 +9,7 @@ function Node(name) {
    this.parent = ''
 }
 
-function get_size(lookup, name) {
-  
+function get_size(lookup, name) {  
    let to_visit = [name]
    let visited = []
    let val = 0
@@ -39,7 +38,6 @@ function solve (commands) {
 
    let cur_node = nodes["root"]
 
-
    for (let c of commands) {
       let command = c.split(" ")   
       
@@ -47,9 +45,7 @@ function solve (commands) {
          if (command[2] === '..' && cur_node.name !== "/" ) {
             cur_node = nodes[cur_node.parent]
          } else if (command[1] === 'cd') {   
-            let n = cur_node.children.find(n => n === `${cur_node.name}/${command[2]}`) 
-            
-            
+            let n = cur_node.children.find(n => n === `${cur_node.name}/${command[2]}`)            
             cur_node = nodes[n]              
          }
       } else {
