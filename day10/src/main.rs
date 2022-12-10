@@ -24,8 +24,6 @@ fn parse_items(s: &str, items: &mut Instructions) {
     } else {
         items.push(Instruction::noop);
     }
-
-    //items.push(Mv::new(dir, amount));
 }
 
 fn part1(instructions: &Instructions) -> i64 {
