@@ -125,9 +125,9 @@ fn part1(grid: &Grid) -> i64 {
                     if new_c == end_char {
                         return tot;
                     }
-                    let up_p = Point::new(point.y - 1, point.x);
-                    if !contains_point(&visited, &up_p) {
-                        next_round.push(up_p);
+                    let new_p = Point::new(point.y - 1, point.x);
+                    if !contains_point(&visited, &new_p) {
+                        next_round.push(new_p);
                     }
                 }
             }
@@ -140,9 +140,9 @@ fn part1(grid: &Grid) -> i64 {
                     if new_c == end_char {
                         return tot;
                     }
-                    let up_p = Point::new(point.y + 1, point.x);
-                    if !contains_point(&visited, &up_p) {
-                        next_round.push(up_p);
+                    let new_p = Point::new(point.y + 1, point.x);
+                    if !contains_point(&visited, &new_p) {
+                        next_round.push(new_p);
                     }
                 }
             }
@@ -155,9 +155,9 @@ fn part1(grid: &Grid) -> i64 {
                     if new_c == end_char {
                         return tot;
                     }
-                    let up_p = Point::new(point.y, point.x + 1);
-                    if !contains_point(&visited, &up_p) {
-                        next_round.push(up_p);
+                    let new_p = Point::new(point.y, point.x + 1);
+                    if !contains_point(&visited, &new_p) {
+                        next_round.push(new_p);
                     }
                 }
             }
@@ -170,9 +170,9 @@ fn part1(grid: &Grid) -> i64 {
                     if new_c == end_char {
                         return tot;
                     }
-                    let up_p = Point::new(point.y, point.x - 1);
-                    if !contains_point(&visited, &up_p) {
-                        next_round.push(up_p);
+                    let new_p = Point::new(point.y, point.x - 1);
+                    if !contains_point(&visited, &new_p) {
+                        next_round.push(new_p);
                     }
                 }
             }
@@ -218,9 +218,9 @@ fn part2(grid: &Grid) -> i64 {
                     if new_c == end_char {
                         return tot;
                     }
-                    let up_p = Point::new(point.y - 1, point.x);
-                    if !contains_point(&visited, &up_p) {
-                        next_round.push(up_p);
+                    let new_p = Point::new(point.y - 1, point.x);
+                    if !contains_point(&visited, &new_p) {
+                        next_round.push(new_p);
                     }
                 }
             }
@@ -233,9 +233,9 @@ fn part2(grid: &Grid) -> i64 {
                     if new_c == end_char {
                         return tot;
                     }
-                    let up_p = Point::new(point.y + 1, point.x);
-                    if !contains_point(&visited, &up_p) {
-                        next_round.push(up_p);
+                    let new_p = Point::new(point.y + 1, point.x);
+                    if !contains_point(&visited, &new_p) {
+                        next_round.push(new_p);
                     }
                 }
             }
@@ -248,9 +248,9 @@ fn part2(grid: &Grid) -> i64 {
                     if new_c == end_char {
                         return tot;
                     }
-                    let up_p = Point::new(point.y, point.x + 1);
-                    if !contains_point(&visited, &up_p) {
-                        next_round.push(up_p);
+                    let new_p = Point::new(point.y, point.x + 1);
+                    if !contains_point(&visited, &new_p) {
+                        next_round.push(new_p);
                     }
                 }
             }
@@ -263,9 +263,9 @@ fn part2(grid: &Grid) -> i64 {
                     if new_c == end_char {
                         return tot;
                     }
-                    let up_p = Point::new(point.y, point.x - 1);
-                    if !contains_point(&visited, &up_p) {
-                        next_round.push(up_p);
+                    let new_p = Point::new(point.y, point.x - 1);
+                    if !contains_point(&visited, &new_p) {
+                        next_round.push(new_p);
                     }
                 }
             }
